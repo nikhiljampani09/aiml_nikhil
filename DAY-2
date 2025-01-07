@@ -1,0 +1,146 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "b0f03c39-9c04-451c-be1b-b346b021b442",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'Virat Kohli': 82, 'Rohit Sharma': 112, 'MS Dhoni': 45, 'KL Rahul': 78, 'Suryakumar Yadav': 64}\n"
+     ]
+    }
+   ],
+   "source": [
+    "cricketers_scores = {\n",
+    "    \"Virat Kohli\": 82,\n",
+    "    \"Rohit Sharma\": 112,\n",
+    "    \"MS Dhoni\": 45,\n",
+    "    \"KL Rahul\": 78,\n",
+    "    \"Suryakumar Yadav\": 64\n",
+    "}\n",
+    "print(cricketers_scores)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "ed0eb9e0-5eb4-4599-8d76-cdbcd556c2c9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'Virat Kohli': 82, 'Rohit Sharma': 112, 'MS Dhoni': 45, 'KL Rahul': 78, 'Suryakumar Yadav': 64, 'Hardik Pandya': 58, 'Ravindra Jadeja': 36}\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "cricketers_scores[\"Hardik Pandya\"] = 58\n",
+    "cricketers_scores[\"Ravindra Jadeja\"] = 36\n",
+    "print(cricketers_scores)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "982c1b7a-b4ba-404e-b218-0497d59df980",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'Virat Kohli': 96, 'Rohit Sharma': 112, 'MS Dhoni': 45, 'KL Rahul': 78, 'Suryakumar Yadav': 64, 'Hardik Pandya': 58, 'Ravindra Jadeja': 36}\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "cricketers_scores[\"Virat Kohli\"] = 96\n",
+    "\n",
+    "print(cricketers_scores)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "a23faac0-dc71-4938-9563-89f505b23786",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'A': 10, 'B': 10, 'C': 10, 'D': 10}"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list1 = [\"A\",\"B\",\"C\",\"D\"]\n",
+    "my_dict = dict.fromkeys(list1,10)\n",
+    "my_dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "7af54255-6b2b-4ff2-98ee-177595817367",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[96, 112, 45, 78, 64, 58, 36]\n",
+      "Total Score:  489\n"
+     ]
+    }
+   ],
+   "source": [
+    "cricketers_scores_list = []\n",
+    "for v in cricketers_scores.values():\n",
+    "    cricketers_scores_list.append(v)\n",
+    "print(cricketers_scores_list)\n",
+    "print(\"Total Score: \", sum(cricketers_scores_list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c63cd050-90a3-4b21-bba0-af86490a9881",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
